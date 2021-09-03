@@ -111,7 +111,12 @@
               </button>
             </div>
             <div class="col-md-3 d-grid">
-              <button type="button" class="btn btn-warning">
+              <button
+                type="button"
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#modalUser"
+              >
                 <i class="fas fa-plus"></i> Add user
               </button>
             </div>
@@ -241,6 +246,72 @@
         <p class="lead">Copyright © 2021 Blogen</p>
       </div>
     </footer>
+
+    <div class="modal fade" id="modalCategory" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="exampleModalLabel">Add Category</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label for="titleInput" class="form-label">Title</label>
+            <input type="text" class="form-control" id="titleInput" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalUser" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-white">
+            <h5 class="modal-title" id="exampleModalLabel">Add User</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Name</label>
+              <input type="text" class="form-control" id="nameInput" />
+            </div>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Name</label>
+              <input type="email" class="form-control" id="emailInput" />
+            </div>
+            <div class="mb-3">
+              <label for="passwordInput" class="form-label">Password</label>
+              <input type="password" class="form-control" id="passwordInput" />
+            </div>
+            <div class="mb-3">
+              <label for="confirmPasswordInput" class="form-label"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPasswordInput"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div
       class="modal fade"
